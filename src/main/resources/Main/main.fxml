@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111"
+            fx:controller="GUI.MenuController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <Menu mnemonicParsing="false" text="Import">
+                            <MenuItem mnemonicParsing="false" onAction="#importRetailers" text="Retailers"/>
+                            <MenuItem mnemonicParsing="false" onAction="#importRoutes" text="Routes"/>
+                            <MenuItem mnemonicParsing="false" onAction="#importWiFi" text="WiFi"/>
+                            <MenuItem mnemonicParsing="false" onAction="#importBikeStations" text="Bike Stations"/>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Export">
+                            <MenuItem mnemonicParsing="false" onAction="#exportRetailers" text="Retailers"/>
+                            <MenuItem mnemonicParsing="false" onAction="#exportRoutes" text="Routes"/>
+                            <MenuItem mnemonicParsing="false" onAction="#exportWiFi" text="WiFi"/>
+                            <MenuItem mnemonicParsing="false" onAction="#exportBikeStations" text="Bike Stations"/>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Change Map Theme">
+                            <MenuItem mnemonicParsing="false" onAction="#changeNormalTheme" text="Normal"/>
+                            <MenuItem mnemonicParsing="false" onAction="#changeDarkTheme" text="Dark"/>
+                        </Menu>
+                        <MenuItem mnemonicParsing="false" onAction="#close" text="Close"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#loadHelpText" text="goBike Guide"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <TabPane prefHeight="200.0" prefWidth="200.0" side="TOP" stylesheets="@tabbedPane.css"
+                 tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+            <tabs>
+                <Tab text="Data">
+                    <content>
+                        <Pane prefHeight="320.0" prefWidth="413.0">
+                            <children>
+                                <fx:include source="../GUI/rawData.fxml"/>
+                            </children>
+                        </Pane>
+                    </content>
+                </Tab>
+                <Tab text="Map">
+                    <content>
+                        <fx:include source="../GUI/map.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Statistic">
+                    <content>
+                        <fx:include source="../GUI/statistic.fxml"/>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+
+    </center>
+</BorderPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="363.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8"
+      fx:controller="GUI.WifiInfoController">
+    <children>
+        <Label layoutX="14.0" layoutY="14.0" prefHeight="20.0" prefWidth="55.0" text="Name"/>
+        <TextField fx:id="nameTxtFld" layoutX="96.0" layoutY="12.0" prefHeight="25.0" prefWidth="491.0"/>
+        <Label layoutX="13.0" layoutY="50.0" prefHeight="20.0" prefWidth="81.0" text="Borough"/>
+        <Label layoutX="13.0" layoutY="118.0" prefHeight="20.0" prefWidth="81.0" text="Provider"/>
+        <Label layoutX="13.0" layoutY="84.0" prefHeight="20.0" prefWidth="81.0" text="Type"/>
+        <Label layoutX="13.0" layoutY="153.0" prefHeight="20.0" prefWidth="81.0" text="Remarks"/>
+        <Label layoutX="13.0" layoutY="190.0" prefHeight="20.0" prefWidth="81.0" text="City"/>
+        <Label layoutX="13.0" layoutY="231.0" prefHeight="20.0" prefWidth="81.0" text="SSID"/>
+        <TextField fx:id="boroughTxtFld" layoutX="96.0" layoutY="47.0" prefHeight="25.0" prefWidth="491.0"/>
+        <TextField fx:id="typeTxtFld" layoutX="96.0" layoutY="81.0" prefHeight="25.0" prefWidth="491.0"/>
+        <TextField fx:id="providerTxtFld" layoutX="96.0" layoutY="115.0" prefHeight="25.0" prefWidth="491.0"/>
+        <TextField fx:id="remarksTxtFld" layoutX="94.0" layoutY="150.0" prefHeight="25.0" prefWidth="491.0"/>
+        <TextField fx:id="cityTxtFld" layoutX="96.0" layoutY="187.0" prefHeight="25.0" prefWidth="491.0"/>
+        <TextField fx:id="ssidTxtFld" layoutX="96.0" layoutY="228.0" prefHeight="25.0" prefWidth="491.0"/>
+        <TextField fx:id="idTxtFld" layoutX="96.0" layoutY="261.0" prefHeight="25.0" prefWidth="491.0"/>
+        <Label layoutX="13.0" layoutY="264.0" prefHeight="20.0" prefWidth="81.0" text="ID"/>
+        <TextField fx:id="latTxtFld" layoutX="96.0" layoutY="296.0" prefHeight="25.0" prefWidth="491.0"/>
+        <Label layoutX="13.0" layoutY="299.0" prefHeight="20.0" prefWidth="81.0" text="Latitude"/>
+        <TextField fx:id="longTxtFld" layoutX="96.0" layoutY="330.0" prefHeight="25.0" prefWidth="491.0"/>
+        <Label layoutX="13.0" layoutY="333.0" prefHeight="20.0" prefWidth="81.0" text="Longitude"/>
+    </children>
+</Pane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="599.0" prefWidth="1008.0" xmlns="http://javafx.com/javafx/8.0.112"
+      fx:controller="GUI.StatisticController">
+    <children>
+        <Label layoutX="73.0" layoutY="21.0" prefHeight="16.0" prefWidth="101.0" text="Start location:"/>
+        <Label layoutX="81.0" layoutY="72.0" text="End location:"/>
+        <Label layoutX="106.0" layoutY="117.0" text="Distance:"/>
+        <Label layoutX="60.0" layoutY="164.0" text="Estimated time:"/>
+        <TextField fx:id="currentLocationTextField" blendMode="SRC_ATOP" editable="false" layoutX="173.0" layoutY="16.0"
+                   prefHeight="26.0" prefWidth="801.0"/>
+        <TextField fx:id="destinationTextField" blendMode="SRC_ATOP" editable="false" layoutX="173.0" layoutY="67.0"
+                   prefHeight="26.0" prefWidth="801.0"/>
+        <TextField fx:id="distanceTextField" blendMode="SRC_ATOP" editable="false" layoutX="173.0" layoutY="112.0"
+                   prefHeight="26.0" prefWidth="801.0"/>
+        <TextField fx:id="timeTextField" blendMode="SRC_ATOP" editable="false" layoutX="173.0" layoutY="159.0"
+                   prefHeight="26.0" prefWidth="801.0"/>
+        <Label layoutX="81.0" layoutY="210.0" text="Petrol saved:"/>
+        <TextField fx:id="petrolTextField" blendMode="SRC_ATOP" editable="false" layoutX="173.0" layoutY="205.0"
+                   prefHeight="26.0" prefWidth="801.0"/>
+        <Label layoutX="12.0" layoutY="301.0" text="CO2 prevented (Petrol):"/>
+        <TextField fx:id="carbonPetrolTextField" blendMode="SRC_ATOP" editable="false" layoutX="173.0" layoutY="296.0"
+                   prefHeight="26.0" prefWidth="801.0"/>
+        <Label layoutX="79.0" layoutY="255.0" text="Diesel saved:"/>
+        <TextField fx:id="dieselTextField" blendMode="SRC_ATOP" editable="false" layoutX="173.0" layoutY="250.0"
+                   prefHeight="26.0" prefWidth="801.0"/>
+        <Label layoutX="11.0" layoutY="349.0" text="CO2 prevented (Diesel):"/>
+        <TextField fx:id="carbonDieselTextField" blendMode="SRC_ATOP" editable="false" layoutX="174.0" layoutY="344.0"
+                   prefHeight="26.0" prefWidth="801.0"/>
+        <Label layoutX="84.0" layoutY="400.0" text="Weight loss:"/>
+        <TextField fx:id="weightLossTextField" blendMode="SRC_ATOP" editable="false" layoutX="174.0" layoutY="394.0"
+                   prefHeight="26.0" prefWidth="801.0"/>
+        <Label layoutX="14.0" layoutY="445.0" text="Average cycling speed:"/>
+        <Label layoutX="65.0" layoutY="493.0" text="User's Weight:"/>
+        <TextField fx:id="cycleSpeedTextField" layoutX="174.0" layoutY="439.0" prefHeight="26.0" prefWidth="658.0"/>
+        <TextField fx:id="weightTextField" layoutX="174.0" layoutY="487.0" prefHeight="26.0" prefWidth="658.0"/>
+        <Button fx:id="recalculateButton" disable="true" layoutX="798.0" layoutY="532.0" mnemonicParsing="false"
+                onAction="#recalculateStat" text="Recalculate the statisics"/>
+        <Label layoutX="845.0" layoutY="493.0" text="Kilograms"/>
+        <Label layoutX="845.0" layoutY="445.0" text="Kilometers per hour"/>
+        <Label fx:id="errorLabel" layoutX="471.0" layoutY="537.0" text="Average speed and weight should be a number!"
+               textFill="#bf0303" visible="false"/>
+    </children>
+</Pane>

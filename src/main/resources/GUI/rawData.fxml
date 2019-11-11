@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.RawDataViewerController">
+    <children>
+        <ListView fx:id="retailListView" layoutX="39.0" layoutY="62.0" prefHeight="392.0" prefWidth="919.0" visible="false" />
+        <ChoiceBox fx:id="dataTypeChoiceBox" layoutX="153.0" layoutY="16.0" prefWidth="150.0" />
+        <Label layoutX="40.0" layoutY="16.0" prefHeight="25.0" prefWidth="113.0" text="Type of Record:" />
+        <Button fx:id="detailButton" layoutX="872.0" layoutY="16.0" minHeight="26.0" mnemonicParsing="false" onAction="#showDetails" prefHeight="26.0" prefWidth="113.0" text="Show Details" />
+        <TextField fx:id="searchText" layoutX="292.0" layoutY="535.0" prefHeight="26.0" prefWidth="190.0" />
+        <Label layoutX="40.0" layoutY="503.0" text="Filter:" />
+        <ChoiceBox fx:id="filterTypeChoiceBox" layoutX="104.0" layoutY="498.0" prefWidth="150.0" />
+        <Button layoutX="514.0" layoutY="499.0" mnemonicParsing="false" onAction="#applyFilter" prefHeight="26.0" prefWidth="63.0" text="Apply" />
+        <Label layoutX="33.0" layoutY="539.0" text="Search:" />
+        <ChoiceBox fx:id="searchChoiceBox" layoutX="104.0" layoutY="534.0" prefWidth="150.0" />
+        <Button layoutX="514.0" layoutY="534.0" mnemonicParsing="false" onAction="#showSearch" prefHeight="25.0" prefWidth="63.0" text="Search" />
+        <Label fx:id="errorDetailLabel" layoutX="809.0" layoutY="43.0" prefHeight="16.0" prefWidth="150.0" text="Please select a record" textFill="#ee0606" visible="false" />
+        <ListView fx:id="wifiListView" layoutX="39.0" layoutY="62.0" prefHeight="392.0" prefWidth="919.0" visible="false" />
+        <ListView fx:id="routeListView" layoutX="39.0" layoutY="62.0" prefHeight="392.0" prefWidth="919.0" visible="false" />
+        <Button layoutX="785.0" layoutY="533.0" mnemonicParsing="false" onAction="#showDefault" prefHeight="26.0" prefWidth="173.0" text="Change to default" />
+        <Label fx:id="errorFilterTypeLabel" layoutX="471.0" layoutY="468.0" prefHeight="16.0" prefWidth="190.0" text="Please select a type of filter" textFill="#ee0606" visible="false" />
+        <Label fx:id="errorSearchTypeLabel" layoutX="317.0" layoutY="468.0" text="Please select a search type" textFill="#f21111" visible="false" />
+        <Button fx:id="showOnMapBtn" layoutX="753.0" layoutY="16.0" minHeight="26.0" mnemonicParsing="false" onAction="#showSelectedEntryOnMap" prefHeight="26.0" prefWidth="113.0" text="Show on Map" />
+        <Label layoutX="313.0" layoutY="21.0" prefHeight="15.0" prefWidth="28.0" text="List:" />
+        <ChoiceBox fx:id="listChoiceBox" layoutX="341.0" layoutY="16.0" prefHeight="25.0" prefWidth="141.0" />
+        <Button fx:id="addFavouriteButton" layoutX="785.0" layoutY="463.0" mnemonicParsing="false" onAction="#addFavourite" prefHeight="26.0" prefWidth="173.0" text="Add to Favourite" />
+        <Label fx:id="errorRecordLabel" layoutX="604.0" layoutY="468.0" text="Please select a record" textFill="#f21111" visible="false" />
+        <Button layoutX="785.0" layoutY="497.0" mnemonicParsing="false" onAction="#showFavourite" prefHeight="26.0" prefWidth="173.0" text="Show Favourite only" />
+        <Button fx:id="removeFavouriteButton" layoutX="785.0" layoutY="494.0" mnemonicParsing="false" onAction="#removeFavourite" prefHeight="26.0" prefWidth="173.0" text="Remove from Favourite" visible="false" />
+        <ComboBox fx:id="filterDetailComboBox" layoutX="292.0" layoutY="499.0" prefHeight="26.0" prefWidth="190.0" />
+        <Button fx:id="addButton" layoutX="608.0" layoutY="499.0" mnemonicParsing="false" onAction="#add" prefHeight="26.0" prefWidth="135.0" text="Add Retailer" />
+        <Button fx:id="deleteButton" layoutX="608.0" layoutY="533.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="135.0" text="Delete Retailer" />
+        <Button fx:id="statisticButton" layoutX="634.0" layoutY="16.0" minHeight="26.0" mnemonicParsing="false" onAction="#showStatistic" prefHeight="26.0" prefWidth="113.0" text="Show Stats" />
+        <Button fx:id="removeListBtn" alignment="TOP_CENTER" layoutX="489.0" layoutY="16.0" maxHeight="26.0" maxWidth="113.0" minHeight="26.0" minWidth="36.0" mnemonicParsing="false" onAction="#deleteList" prefHeight="26.0" prefWidth="113.0" text="Delete List" />
+        <ListView fx:id="bikeStationListView" layoutX="39.0" layoutY="62.0" prefHeight="392.0" prefWidth="919.0" visible="false" />
+        <Label fx:id="listErrorLabel" layoutX="613.0" layoutY="468.0" text="Please select a list!" textFill="#e40d0d" visible="false" />
+        <Label layoutX="32.0" layoutY="468.0" text="Sort by:" />
+        <ChoiceBox fx:id="sortChoiceBox" layoutX="103.0" layoutY="463.0" prefWidth="150.0" />
+    </children>
+</Pane>

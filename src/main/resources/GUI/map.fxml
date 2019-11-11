@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.lynden.gmapsfx.GoogleMapView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="430.0" prefWidth="964.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MapController">
+    <children>
+        <GoogleMapView fx:id="mapView" layoutY="129.0" prefHeight="301.0" prefWidth="875.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="130.0" />
+        <TextField fx:id="fromTextField" prefHeight="27.0" prefWidth="200.0" promptText="From:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+        <TextField fx:id="toTextField" layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="200.0" promptText="To:" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="50.0" />
+        <Button fx:id="routeButton" layoutX="10.0" layoutY="90.0" mnemonicParsing="false" onAction="#routeAction" text="Find Route" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="90.0" />
+        <CheckBox fx:id="displayRetailersCheckBox" layoutX="227.0" layoutY="9.0" mnemonicParsing="false" onAction="#toggleRetailerDisplay" text="Retailers" />
+        <CheckBox layoutX="227.0" layoutY="34.0" mnemonicParsing="false" onAction="#toggleWiFiDisplay" text="WiFi" />
+        <CheckBox fx:id="routeWifiNearby" layoutX="358.0" layoutY="35.0" mnemonicParsing="false" onAction="#toggleNearbyWiFi" text="Show WiFi Nearby to Route" />
+        <CheckBox fx:id="retailerWifiNearby" layoutX="627.0" layoutY="10.0" mnemonicParsing="false" onAction="#toggleRetailerWiFi" text="Show WiFi Nearby to Retailer" />
+        <Button fx:id="clearRouteButton" layoutX="505.0" layoutY="90.0" mnemonicParsing="false" onAction="#clearRoute" text="Clear Route" />
+        <Button fx:id="clearRetailerButton" layoutX="614.0" layoutY="90.0" mnemonicParsing="false" onAction="#clearRetailer" text="Clear Retailer" />
+        <Button fx:id="clearWifiButton" layoutX="735.0" layoutY="90.0" mnemonicParsing="false" onAction="#clearWifi" text="Clear WiFi" />
+        <Button fx:id="statButton" layoutX="223.0" layoutY="90.0" mnemonicParsing="false" onAction="#showStat" text="Show Stats" />
+        <Button fx:id="createRouteButton" layoutX="109.0" layoutY="90.0" mnemonicParsing="false" onAction="#createRouteAction" text="Create Route" />
+        <CheckBox fx:id="routeRetailerNearby" layoutX="358.0" layoutY="10.0" mnemonicParsing="false" onAction="#toggleNearbyRetailer" text="Show Retailers Nearby to Route" />
+        <CheckBox layoutX="227.0" layoutY="59.0" mnemonicParsing="false" onAction="#toggleBikeStations" text="Bike Stations" />
+        <Button fx:id="clearBikeStationButton" layoutX="358.0" layoutY="90.0" mnemonicParsing="false" onAction="#clearBikeStation" text="Clear Bike Station" />
+        <CheckBox fx:id="routeBikeStationNearby" layoutX="358.0" layoutY="60.0" mnemonicParsing="false" onAction="#toggleNearbyBikeStation" text="Show Bike Stations Nearby to Route" />
+    </children>
+</AnchorPane>

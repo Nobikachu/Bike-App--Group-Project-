@@ -1,0 +1,10 @@
+.idea/
+*.iml
+*.iws
+dependency-reduced-pom.xml
+*.jar
+*.class
+.project
+
+log/
+target/

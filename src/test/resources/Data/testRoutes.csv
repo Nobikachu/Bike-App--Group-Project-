@@ -1,0 +1,4 @@
+"tripduration","starttime","stoptime","start station id","start station name","start station latitude","start station longitude","end station id","end station name","end station latitude","end station longitude","bikeid","usertype","birth year","gender"
+"1015","2013-12-01 00:00:03","2013-12-01 00:16:58","401","Allen St & Rivington St","40.72019576","-73.98997825","476","E 31 St & 3 Ave","40.74394314","-73.97966069","14729","Subscriber","1979","2"
+"962","2013-12-01 00:00:07","2013-12-01 00:16:09","312","Allen St & E Houston St","40.722055","-73.989111","223","W 13 St & 7 Ave","40.73781509","-73.99994661","17871","Subscriber","1970","2"
+"768","2013-12-01 00:00:15","2013-12-01 00:13:03","326","E 11 St & 1 Ave","40.72953837","-73.98426726","291","Madison St & Montgomery St","40.713126","-73.984844","18508","Subscriber","1982","2"
